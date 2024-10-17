@@ -33,4 +33,46 @@ You can generate SR for some Gaussian textures examples of the folder ```Data```
       <th><img src="Results/RerA/samples.gif" /></th>
       <th><img src="Results/RerA/Kriging.png" /></th>
      </tr> 
+     <tr>
+  <th><img src="Results/Fabric1/LR_resized.png" /></th>
+ <th><img src="Data/Fabric1/HR.png" /></th>
+     <th><img src="Data/Fabric1/Reference.png" /></th>
+      <th><img src="Results/Fabric1/samples.gif" /></th>
+      <th><img src="Results/Fabric1/Kriging.png" /></th>
+     </tr> 
+     <tr>
+  <th><img src="Results/Fabric5/LR_resized.png" /></th>
+ <th><img src="Data/Fabric5/HR.png" /></th>
+     <th><img src="Data/Fabric5/Reference.png" /></th>
+      <th><img src="Results/Fabric5/samples.gif" /></th>
+      <th><img src="Results/Fabric5/Kriging.png" /></th>
+     </tr> 
+     <tr>
+  <th><img src="Results/Jean/LR_resized.png" /></th>
+ <th><img src="Data/Jean/HR.png" /></th>
+     <th><img src="Data/Jean/Reference.png" /></th>
+      <th><img src="Results/Jean/samples.gif" /></th>
+      <th><img src="Results/Jean/Kriging.png" /></th>
+     </tr> 
+     <tr>
+  <th><img src="Results/Paint/LR_resized.png" /></th>
+ <th><img src="Data/Paint/HR.png" /></th>
+     <th><img src="Data/Paint/Reference.png" /></th>
+      <th><img src="Results/Paint/samples.gif" /></th>
+      <th><img src="Results/Paint/Kriging.png" /></th>
+     </tr> 
+     <tr>
+  <th><img src="Results/Wall1/LR_resized.png" /></th>
+ <th><img src="Data/Wall1/HR.png" /></th>
+     <th><img src="Data/Wall1/Reference.png" /></th>
+      <th><img src="Results/Wall1/samples.gif" /></th>
+      <th><img src="Results/Wall1/Kriging.png" /></th>
+     </tr> 
+     <tr>
+  <th><img src="Results/Wood5/LR_resized.png" /></th>
+ <th><img src="Data/Wood5/HR.png" /></th>
+     <th><img src="Data/Wood5/Reference.png" /></th>
+      <th><img src="Results/Wood5/samples.gif" /></th>
+      <th><img src="Results/Wood5/Kriging.png" /></th>
+     </tr> 
 </table>
