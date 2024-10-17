@@ -5,3 +5,19 @@ This code is associated with the preprint [Emile Pierret,Bruno Galerne (2024). S
 
 
 You can generate SR for some Gaussian textures examples of the folder ```Data``` by using the notebook ```Code.ipynb``` and downloading the two files ```operators.py``` and ```perdecomp.py```.
+
+
+
+# Examples
+
+
+<table>
+  <tr>
+    <th> LR image </th>
+    <th> HR image</th>
+    <th> Reference image</th>
+    <th> Gaussian SR sample </th>
+    <th> Kriging component </th>
+    <th> Innovation component </th>
+  </tr>
+</table>
