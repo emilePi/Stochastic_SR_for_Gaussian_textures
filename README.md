@@ -20,9 +20,9 @@ You can generate SR for some Gaussian textures examples of the folder ```Data```
     <th> Kriging component </th>
   </tr>
    <tr>
-  <th><img src="Results/Wall/LR.png" /></th>
- <th><img src="Results/Wall/HR.png" /></th>
-     <th><img src="Results/Wall/Reference.png" /></th>
+  <th><img src="Data/Wall/LR.png" /></th>
+ <th><img src="Data/Wall/HR.png" /></th>
+     <th><img src="Data/Wall/Reference.png" /></th>
       <th><img src="Results/Wall/Sample0.png" /></th>
       <th><img src="Results/Wall/Kriging.png" /></th>
      </tr> 
