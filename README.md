@@ -26,4 +26,11 @@ You can generate SR for some Gaussian textures examples of the folder ```Data```
       <th><img src="Results/Wall/samples.gif" /></th>
       <th><img src="Results/Wall/Kriging.png" /></th>
      </tr> 
+   <tr>
+  <th><img src="Results/RerA/LR_resized.png" /></th>
+ <th><img src="Data/RerA/HR.png" /></th>
+     <th><img src="Data/RerA/Reference.png" /></th>
+      <th><img src="Results/RerA/samples.gif" /></th>
+      <th><img src="Results/RerA/Kriging.png" /></th>
+     </tr> 
 </table>
