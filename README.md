@@ -12,13 +12,14 @@ You can generate SR for some Gaussian textures examples of the folder ```Data```
 
 
 <table>
-  <tr>
+  <tr><font size="5"> 
     <th> LR image </th>
     <th> HR image</th>
     <th> Reference image</th>
     <th> Gaussian SR sample </th>
     <th> Kriging component </th>
   </tr>
+  </font> 
    <tr>
   <th><img src="Results/Wall/LR_resized.png" /></th>
  <th><img src="Data/Wall/HR.png" /></th>
