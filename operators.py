@@ -1,11 +1,7 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Thu May 25 09:43:45 2023
-
-@author: pierret
+Matlab_kernel_fft(r,nb_channels,M,N ) returns the FFT kernel associated with the Matlab imresize zoom-out of factor r.
+Author : Emile Pierret (29/10/2024)
 """
-
 
 import numpy as np
 import torch
@@ -58,69 +54,4 @@ def Matlab_kernel_fft(r,nb_channels,M,N ) :
 
     c3fft = torch.stack([cfft2]*nb_channels)
 
-    return c3fft
-
-def identity_fft(nb_channels,M,N ) :
-    c3fft = 1. + 0*torch.zeros(nb_channels,M,N,dtype = torch.complex64)
-    return c3fft
-
-def box_filter_fft(n,nb_channels,M,N):
-    g = n*n
-    
-    c = torch.zeros(M,N)
-    
-    for i in range(-n//2+1,n//2+1) :
-        for j in range(-n//2+1,n//2+1) :
-            c[i,j] += 1/g
-    ##FFT for one channel
-
-    cfft2 = torch.fft.fft2(c)
-
-    ##FFT for nb_channels
-
-    c3fft = torch.stack([cfft2]*nb_channels)
-
-    return c3fft
-
-
-def Gaussian_blur_fft(sigblur,nb_channels,M,N) :
-    # Define Gaussian blur operator:
-    s = int(3*sigblur)
-    w = 2*s+1
-    kernel = np.zeros(w)
-    for t in np.arange(w):
-     kernel[t] = np.exp(-(t-s)**2/(2*sigblur**2))
-    kernel /= sum(kernel)
-    gausskernel = np.zeros((w,w))
-    for t1 in np.arange(w):
-     for t2 in np.arange(w):
-         gausskernel[t1,t2] = kernel[t1]*kernel[t2]
-    
-    cM = torch.zeros(M)
-    cN = torch.zeros(N)
-    for k in range(w) :
-        cM[k-w//2] = kernel[k]
-        cN[k-w//2] = kernel[k]
-    
-    # kernelM = np.zeros(M)
-    # for t in np.arange(M):
-    #  kernelM[t] = np.exp(-(t-s)**2/(2*sigblur**2))
-     
-    #  kernelN = np.zeros(N)
-    # for t in np.arange(N):
-    #  kernelN[t] = np.exp(-(t-s)**2/(2*sigblur**2))
-    # kernelM /= sum(kernelM)
-    # kernelN /= sum(kernelN)
-    # for k in range(M) :
-    #     cM[k-M//2] = kernelM[k]
-    # for k in range(N) :
-    #     cN[k-N//2] = kernelN[k]
-
-
-    cfft2 = torch.fft.fft2(torch.outer(cM,cN))
-    
-    ##FFT for nb_channels
-    
-    c3fft = torch.stack([cfft2]*nb_channels)
-    
     return c3fft
