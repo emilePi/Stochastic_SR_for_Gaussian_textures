@@ -1,11 +1,11 @@
 """
-p = perdecomp(U) computes Lionel Moisan's periodic component of U.
-p,s = perdecomp(U) computes Lionel Moisan's periodic plus smooth
-ecomposition of U = p+s
+p = perdecomp(u) computes Lionel Moisan's periodic component of u.
+p,s = perdecomp(u) computes Lionel Moisan's periodic plus smooth
+decomposition of u = p+s
 Works for gray-valued and RGB color images. 
 Author : Bruno Galerne (2009/03/17), adapted to pytorch by Emile Pierret
 
-For the resolution of Poisson's equation Laplacian(U) = f see the book
+For the resolution of Poisson's equation Laplacian(u) = f see the book
 'Numerical Recipes: the Art of Scientific Computing'
 """
 
